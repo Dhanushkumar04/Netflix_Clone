@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Movies</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e50914;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .show-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .show-card {
+            width: 250px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .show-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .show-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .show-card:hover .show-card-overlay {
+            opacity: 1;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .show-card:hover .play-button {
+            opacity: 1;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .show-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="web.html">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tv Shows</h1>
+
+        <div class="show-container">
+            <div class="show-card">
+                <img src="https://th.bing.com/th/id/R.19d5597db2e71ec5a78306ce0f62ff8b?rik=0TGy6P3AgkyeGA&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2016%2f06%2fstranger-things-poster-netflix.jpg&ehk=pkncno4Qi9FsZOXXG0hpSnL%2flP%2bBpORZH%2bcSSzgLJEU%3d&risl=&pid=ImgRaw&r=0" alt="Show 1">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://www.themoviedb.org/t/p/original/4UC4odnbRhKdxwy8S3ZG0DTpgHF.jpg" alt="Show 2">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg" alt="Show 3">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BZDcxOGI0MDYtNTc5NS00NDUzLWFkOTItNDIxZjI0OTllNTljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Show 4">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.H4H0cre84IL0b8iS-qad4QHaK9&rs=1&pid=ImgDetMain" alt="Show 5">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.2ZQmYnXWYORVLmQicdJvGgAAAA&rs=1&pid=ImgDetMain" alt="Show 6">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+</html>

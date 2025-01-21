@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Movies</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e50914;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .show-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .show-card {
+            width: 250px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .show-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .show-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .show-card:hover .show-card-overlay {
+            opacity: 1;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .show-card:hover .play-button {
+            opacity: 1;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .show-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="web.html">Home</a></li>
+                <li><a href="show.html">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Movies</h1>
+
+        <div class="show-container">
+            <div class="show-card">
+                <img src="https://cinespia.org/wp-content/uploads/2019/05/MM_poster.jpg" alt="Show 1">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://picfiles.alphacoders.com/385/385304.jpg" alt="Show 2">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://wallpaperaccess.com/full/1913793.jpg" alt="Show 3">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://www.themoviedb.org/t/p/original/ielVFcmZS0OGkNJsBS27n5KPAKm.jpg" alt="Show 4">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://i.pinimg.com/originals/0d/d8/34/0dd834fc765091af36a125ea9bcf8cc8.jpg" alt="Show 5">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+            <div class="show-card">
+                <img src="https://image.tmdb.org/t/p/original/j4vEhYjOG3CEdh5GIycTWk5vz7T.jpg" alt="Show 6">
+                <div class="show-card-overlay"></div>
+                <div class="play-button">&#9658;</div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+</html>
